@@ -1,0 +1,78 @@
+body{
+	height:100vh;
+	background-image: linear-gradient(to bottom right, blue, white);
+	background-size: contain;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.timer{
+    
+        font-size:62px;
+        line-height:62px;
+        padding:5px 0px 5px 0px;
+        margin:0px 6px 5px 6px;
+        width:76px;
+		border: blue solid 1px;
+        text-align:center;
+        text-shadow: 1px 1px 0 #111111;
+    
+}
+.button2{
+    font-size:28px;
+    line-height:34px;
+	width: 30px;
+	margin: 2px;
+  
+}
+.betweenbutton2{
+    width:2px;
+}
+.pcenter{
+	margin:0px auto 0px auto;
+}
+.container-total{
+	
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	margin: 0 20px;
+}
+.container-somas{
+	display: flex;
+	justify-content: center;
+}
+.button1{
+	color:#ffffff;
+	line-height:40px;
+	width:100px;
+	height:54px;
+	text-shadow: 0px 1px 0 #111111;
+	border-radius:5px;
+	text-align:center;
+	font-family: 'roboto', 'Times New Roman', serif;
+	font-size:26px;
+	border:1px solid #222222;
+	padding:2px 2px 2px 2px;	
+	box-shadow: 5px 5px 2px black;
+	margin:15px 5px 0px 5px;
+	background-color: rgb(67, 67, 67); 
+	transition: all linear 0.2s;
+
+}
+.button1:hover{
+	color: #ffffff;
+}
+.button1:active{
+	background-image: linear-gradient(to bottom, #3f3f3f, #444444);
+	box-shadow: inset 0px 1px 0px #666666, 0px 2px 0px 0px #333333, 1px 5px 3px #1a1a1a;
+}
+.container-playPause{
+	display: flex;
+	justify-content: center;
+}
+

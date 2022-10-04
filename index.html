@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-total">
+            <h2>Horas</h2>
+        <input type="text" id="timerHoras" value="00" class="timer">
+        <div class="container-somas">
+        <input type="button" value="+" onclick="addHour()" class="button2"/>
+        <input type="button" value="-" onclick="subHour()" class="button2"/>
+        </div>
+        </div>
+        <div class="container-total">
+            <h2>Minutos</h2>
+        <input type="text" id="timerMinutos" value="00" class="timer">
+        <div class="container-somas">
+        <input type="button" value="+" onclick="addMinute()" class="button2"/>
+        <input type="button" value="-" onclick="subMinute()" class="button2"/>
+        </div>
+        </div>
+        <div class="container-total">
+            <h2>Segundos</h2>
+
+        <input type="text" id="timerSegundos" value="00" class="timer">
+        <div class="container-somas">
+        <input type="button" value="+" onclick="addSecond()" class="button2"/>
+        <input type="button" value="-" onclick="subSecond()" class="button2"/>
+        </div> 
+       
+         </div>
+       
+
+         </div>
+        
+         <div class="container-playPause">
+            <form name="timergo">
+          <div class="container-iniciar-parar">
+          <input type="button" name="startstop" value="Iniciar" onclick="timerStart();" class="button1"/>
+          <input type="button" name="reset" value="Apagar" onclick="timerReset();" class="button1" />
+      </div>
+      </form>
+       </div>
+      
+   <audio id="music" src="./audio_audio-matchcard.wav"></audio>
+</body>
+</html>
