@@ -1,11 +1,12 @@
 body{
-	height:100vh;
 	background-image: linear-gradient(to bottom right, blue, white);
 	background-size: contain;
 }
 .container{
     margin: 0 auto;
+	height:100vh;
     display: flex;
+	flex-direction: column;
     justify-content: center;
 }
 
@@ -20,6 +21,10 @@ body{
         text-align:center;
         text-shadow: 1px 1px 0 #111111;
     
+}
+.teste{
+	display: flex;
+	justify-content: center;
 }
 .button2{
     font-size:28px;
@@ -39,7 +44,7 @@ body{
     display: flex;
 	justify-content: center;
 	align-items: center;
-    flex-direction: column;
+	flex-direction: column;
 	margin: 0 20px;
 }
 .container-somas{

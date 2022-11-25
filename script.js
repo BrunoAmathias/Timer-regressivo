@@ -117,7 +117,7 @@ function timerStart(){
 		return
 	}
 	
-	if((isNaN(horas) == true)||(isNaN(minutos) == true)||(isNaN(segundos) == true))
+	if((isNaN(horas) === true)||(isNaN(minutos) === true)||(isNaN(segundos) === true))
 	{
 		alert("Letras não são permitidas, apenas números.");
 		return;
@@ -147,11 +147,12 @@ function timerStart(){
 	document.timergo.startstop.value = "Stop";
 	document.timergo.startstop.onclick = timerStop;
 	document.timergo.reset.onclick = timerReset;
-	timerHoras.disabled = "disabled";
-	timerMinutos.disabled = "disabled";
-	timerSegundos.disabled = "disabled";
+	timerHoras.disabled = true;
+	timerMinutos.disabled = true;
+	timerSegundos.disabled = true;
 	totaltime = (parseInt(timerHoras.value * 3600 + timerMinutos.value * 60 +  timerSegundos.value * 1))*1000;
 	horaInicio = Date.now();
+	// clearTimeout(timerID);
 	timer();
 }
 
@@ -173,9 +174,7 @@ function timerContinue(){
 	timer();
 }
 function timerReset(){
-	timerHoras.disabled = false;
-	timerMinutos.disabled = false;
-	timerSegundos.disabled = false;
+	
 	timerHoras.value = "00";
 	timerMinutos.value = "00";
 	timerSegundos.value = "00";
